@@ -1,0 +1,13 @@
+"0.2650086910014708","0.28065249364888356","0.44377590586976867","0.44805455274769357","0.46129161652627354"
+"0.3061906672014975","0.27891429335472656","0.4346837812541784","0.43147479609573475","0.45554218478406205"
+"0.25511432009626955","0.2805187859339484","0.44658376788340687","0.41636582430806257","0.4441770290145741"
+"0.2913491108436957","0.2826581093729108","0.4340152426795026","0.4431073672950929","0.4551410616392566"
+"0.2686547205135063","0.27855041454934476","0.43500936079165553","0.4466434875635197","0.4497191762503343"
+"3.317750378813947e-05","4.415591348620581e-07","0.02999020260848581","0.022546617840774722"
+The accuracies above indicate that Adaboost performs better than the other classifiers.
+Further we can see that the RandomForest and MLP classier performed similarly.
+One reason I think this is happens is because of how AdaBoost works,  it keeps assigning higher weight to the wrong classified observations on each iteration.
+Whereas RandomForest eliminates overfitting which may be happening with the data set we have. A possible reason why the MLP classier did not perform as well as AdaBoost is because the number of hidden layers we used was 2 and not greater, as the MLP classier performs better with more hidden layers so it can better fit the model to the data.
+Lastly the linearSVM and radialSVM models do not have high accuracies because of the format of the data ( ie large number of features).
+The p values indicate the relevance of our results. In this case we can see how much better AdaBoost Is then all the other classifiers .This is indicated by how small
+the p values are and the fact that they are less than 0.05. We can also see from the p values how LinearSVM and radialSVM  are significantly worse than Adaboost.
